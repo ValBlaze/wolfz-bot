@@ -1,8 +1,2 @@
 node_modules
 .env
-
-!src/commands
-!src/events
-!src/features
-!src/validations/runtime
-!src/validations/syntax
