@@ -22,13 +22,13 @@ client.on("ready", () => {
 		// Path to your features folder
 		featuresDir: path.join(__dirname, "features"),
 		// Configure your event handlers
-		events: {
-			// Where your events are located. This is required if you
-			// provide this events object
-			dir: path.join(__dirname, "events"),
-			// To learn how to properly configure your events please see
-			// https://docs.wornoffkeys.com/events/what-is-a-feature
-		},
+		// events: {
+		// 	// Where your events are located. This is required if you
+		// 	// provide this events object
+		// 	dir: path.join(__dirname, "events"),
+		// 	// To learn how to properly configure your events please see
+		// 	// https://docs.wornoffkeys.com/events/what-is-a-feature
+		// },
 		// Your MongoDB connection URI
 		mongoUri: process.env.MONGO_URI || "",
 		// What server IDs are for testing. This is where test
@@ -54,19 +54,19 @@ client.on("ready", () => {
 			// persistent via MongoDB.
 			dbRequired: 300,
 		},
-		// Dynamic validations
-		validations: {
-			// Syntax based validations: Ran per command whenever
-			// the bot starts up. Useful to throw errors if the
-			// syntax of a command is not correct.
-			syntax: path.join(__dirname, "validations", "syntax"),
-			// Runtime based validations: Ran per command whenever
-			// that command is ran. Should return true or false
-			// depending on if the command should be ran or not.
-			runtime: path.join(__dirname, "validations", "runtime"),
-			// For more information on how to configure dyanmic validations
-			// please see: TODO: add link
-		},
+		// // Dynamic validations
+		// validations: {
+		// 	// Syntax based validations: Ran per command whenever
+		// 	// the bot starts up. Useful to throw errors if the
+		// 	// syntax of a command is not correct.
+		// 	syntax: path.join(__dirname, "validations", "syntax"),
+		// 	// Runtime based validations: Ran per command whenever
+		// 	// that command is ran. Should return true or false
+		// 	// depending on if the command should be ran or not.
+		// 	runtime: path.join(__dirname, "validations", "runtime"),
+		// 	// For more information on how to configure dyanmic validations
+		// 	// please see: TODO: add link
+		// },
 	});
 });
 
