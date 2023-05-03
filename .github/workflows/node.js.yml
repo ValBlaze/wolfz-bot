@@ -37,7 +37,7 @@ jobs:
           username: ${{ secrets.HOST_USERNAME }}
           script: |
             pm2 delete all
-            cd /root/Woflz-Bot
+            cd /root/Wolfz-Bot
             git pull
             npm install
             tsc
