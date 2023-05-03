@@ -1,6 +1,6 @@
 import { Client, IntentsBitField, Partials } from "discord.js";
 import path from "path";
-import WOK, { DefaultCommands } from "wokcommands";
+import WOK from "wokcommands";
 require("dotenv/config");
 
 const client = new Client({
@@ -39,12 +39,12 @@ client.on("ready", () => {
 		botOwners: ["831969094797361193"],
 		// Don't want some of the default commands? Add them here
 		disabledDefaultCommands: [
-			DefaultCommands.ChannelCommand,
-			DefaultCommands.CustomCommand,
-			DefaultCommands.Prefix,
-			DefaultCommands.RequiredPermissions,
-			DefaultCommands.RequiredRoles,
-			DefaultCommands.ToggleCommand,
+			// DefaultCommands.ChannelCommand,
+			// DefaultCommands.CustomCommand,
+			// DefaultCommands.Prefix,
+			// DefaultCommands.RequiredPermissions,
+			// DefaultCommands.RequiredRoles,
+			// DefaultCommands.ToggleCommand,
 		],
 		// Configure the cooldowns for your commands and features
 		cooldownConfig: {
