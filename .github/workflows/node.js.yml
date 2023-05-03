@@ -40,5 +40,5 @@ jobs:
             cd /root/Woflz-Bot
             git pull
             npm install
-            tsc
-            pm2 start build/index.js
+            npm run build
+            pm2 start dist/index.js
