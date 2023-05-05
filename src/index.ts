@@ -2,6 +2,7 @@ import { Client, IntentsBitField, Partials } from "discord.js";
 import path from "path";
 import WOK from "wokcommands";
 require("dotenv/config");
+require("./server");
 
 const client = new Client({
 	intents: [
